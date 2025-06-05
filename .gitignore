@@ -2,3 +2,27 @@ venv311/
 venv310/
 venv
 .venv
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment variables
+.env
+
+# IDE configurations
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Byte-compiled files
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS system files
+.DS_Store
