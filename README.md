@@ -8,7 +8,7 @@ API REST que identifica platillos de comida a partir de imágenes usando un mode
 
 | SO / arquitectura                  | Python | Paquete TensorFlow recomendado | Notas                             |
 | ---------------------------------- | ------ | ------------------------------ | --------------------------------- |
-| **macOS Apple Silicon (M1/M2/M3)** | 3.10.x | `tensorflow-macos==2.16.1`     | Rinde gracias a aceleración Metal |
+| **macOS Apple Silicon (M1/M2/M3)** | 3.10.x | `tensorflow-macos` `tensorflow-metal`     | Rinde gracias a aceleración Metal |
 | **macOS Intel**                    | 3.10.x | `tensorflow-cpu==2.16.1`       | Sólo CPU                          |
 | **Linux (x86\_64)**                | 3.10.x | `tensorflow-cpu==2.16.1`       |                                   |
 | **Windows 10/11 (x86\_64)**        | 3.10.x | `tensorflow-cpu==2.16.1`       | Asegúrate de 64 bits              |
@@ -35,7 +35,7 @@ Otras dependencias (instaladas vía `pip` / `requirements.txt`):
 
 # Actualiza pip e instala dependencias
  python -m pip install --upgrade pip
- pip install -r requirements.txt tensorflow-macos==2.16.1       # Apple Silicon
+ pip install -r requirements.txt tensorflow-macos==2.16.1 tensorflow-metal      # Apple Silicon
 # ó
  pip install -r requirements.txt tensorflow-cpu==2.16.1          # Intel / Linux
 ```
